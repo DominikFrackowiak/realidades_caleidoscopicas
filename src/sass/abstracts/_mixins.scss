@@ -1,0 +1,19 @@
+@mixin margin-bottom($size) {
+	margin-bottom: $size;
+	@media (min-width: 576px) {
+		margin-bottom: $size * 1.5;
+	}
+	@media (min-width: 992px) {
+		margin-bottom: $size * 2;
+	}
+}
+
+@mixin margin-top($size) {
+	margin-top: $size;
+	@media (min-width: 576px) {
+		margin-top: $size * 1.5;
+	}
+	@media (min-width: 992px) {
+		margin-top: $size * 2;
+	}
+}

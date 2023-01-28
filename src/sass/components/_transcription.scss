@@ -1,0 +1,33 @@
+.transcription {
+	display: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	transition: 7s;
+	background-color: var(--lightred);
+
+	&__header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__close {
+		transform: rotate(45deg);
+		font-size: 25px;
+		font-weight: bold;
+		padding: 20px;
+		cursor: pointer;
+	}
+}
+
+.transcription.active {
+	display: block;
+	margin: 0;
+	padding: 0;
+	top: 0;
+	left: 0;
+}

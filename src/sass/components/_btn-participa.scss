@@ -1,0 +1,25 @@
+@use '../abstracts' as m;
+
+.btn-participa {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	padding: 0.8em 1.6em;
+	border: none;
+	transition: background-color 0.3s;
+	@include m.margin-bottom(5px);
+	@include m.margin-top(20px);
+
+	&--dark-blue {
+		background-color: var(--darkblue);
+		color: var(--white);
+
+		&:hover {
+			background-color: var(--lightblue);
+		}
+	}
+
+	&__a {
+		color: inherit;
+	}
+}

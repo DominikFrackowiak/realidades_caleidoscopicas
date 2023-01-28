@@ -1,0 +1,105 @@
+@use '../abstracts' as m;
+
+@font-face {
+	font-family: '1,617';
+	src: url('../fonts/1\,617.ttf');
+}
+
+@font-face {
+	font-family: 'Galano Grotesque Medium';
+	src: url('../fonts/GalanoGrotesqueMedium.otf');
+}
+
+@font-face {
+	font-family: 'Galano Grotesque Semibold';
+	src: url('../fonts/GalanoGrotesqueSemiBold.otf');
+}
+
+@font-face {
+	font-family: 'Galano Grotesque Regular';
+	src: url('../fonts/GalanoGrotesqueRegular.otf');
+}
+
+a {
+	text-decoration: none;
+}
+
+.span-ish {
+	display: inline-block;
+	transform: rotate(-180deg);
+}
+
+h2 {
+	width: 100%;
+	text-align: center;
+	font-family: '1,617';
+	font-size: 2rem;
+	@include m.margin-bottom(25px);
+
+	@media (min-width: 768px) {
+		font-size: 2.5rem;
+	}
+
+	@media (min-width: 992px) {
+		font-size: 3rem;
+	}
+}
+
+h3 {
+	font-family: 'Galano Grotesque Medium';
+	font-size: 1.2rem;
+	@include m.margin-bottom(10px);
+	@media (min-width: 768px) {
+		font-size: 1.8rem;
+	}
+	@media (min-width: 992px) {
+		font-size: 2rem;
+	}
+}
+
+h4 {
+	font-family: 'Galano Grotesque Regular';
+	font-size: 1.1rem;
+	@include m.margin-bottom(10px);
+	@media (min-width: 768px) {
+		font-size: 1.6rem;
+	}
+
+	@media (min-width: 992px) {
+		font-size: 1.8rem;
+	}
+}
+
+.btn {
+	font-family: '1,617';
+	font-size: 0.97rem;
+	color: var(--white);
+
+	@media (min-width: 768px) {
+		font-size: 1.1rem;
+	}
+
+	@media (min-width: 992px) {
+		font-size: 1.3rem;
+	}
+}
+
+p {
+	font-family: 'Galano Grotesque Regular';
+	font-size: 1rem;
+	color: var(--white);
+	@include m.margin-bottom(20px);
+
+	@media (min-width: 768px) {
+		font-size: 1.1rem;
+	}
+
+	@media (min-width: 992px) {
+		font-size: 1.3rem;
+	}
+}
+
+.audio {
+	font-family: 'Galano Grotesque Medium';
+	font-size: 1rem;
+}

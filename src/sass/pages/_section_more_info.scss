@@ -1,0 +1,52 @@
+.section-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	background-position: center;
+	background-size: cover;
+
+	@media (min-width: 576px) {
+		background-image: url('../img/background_medium.svg');
+	}
+	@media (min-width: 992px) {
+		background-image: url('../img/background.svg');
+	}
+
+	&__header3,
+	&__header4 {
+		display: none;
+		text-align: center;
+
+		@media (min-width: 576px) {
+			display: block;
+		}
+	}
+
+	// &__header3 {
+	// 	font-family: 'Galano Grotesque Semibold';
+	// 	font-size: 2rem;
+	// }
+	// &__header4 {
+	// 	font-family: 'Galano Grotesque Regular';
+	// 	font-size: 1.8rem;
+	// 	fsz
+	// }
+
+	&__descript-wrapper {
+		@media (min-width: 992px) {
+			// margin-top: 60px;
+			display: flex;
+			align-items: start;
+			justify-content: space-between;
+		}
+	}
+
+	p {
+		margin-bottom: 20px;
+		@media (min-width: 992px) {
+			// margin-bottom: 0;
+			width: 47%;
+		}
+	}
+}

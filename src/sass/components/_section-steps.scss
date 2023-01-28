@@ -1,0 +1,31 @@
+.section-steps {
+	// position: relative;
+	&__header {
+		display: flex;
+		text-align: left;
+		align-items: center;
+	}
+	&__icon {
+		height: 35px;
+
+		@media (min-width: 576px) {
+			height: 40px;
+		}
+
+		@media (min-width: 992px) {
+			height: 50px;
+		}
+	}
+
+	&__span {
+		display: block;
+		margin-top: 4px;
+		padding-left: 10px;
+	}
+
+	&--light-red {
+		background-color: var(--lightred);
+	}
+}
+
+

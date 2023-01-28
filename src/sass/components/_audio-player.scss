@@ -1,0 +1,55 @@
+@use '../abstracts/' as m;
+
+.all-audio-wrapper {
+	//wrapper for all players
+	display: flex;
+	justify-content: space-between;
+	align-items: start;
+	@include m.margin-bottom(30px);
+}
+
+.audio-wrapper {
+	//wrapper for single audio-player
+	width: 33%;
+	height: 200px;
+
+	&__controls {
+		height: 70%;
+		position: relative;
+		text-align: center;
+	}
+
+	&__icon {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		display: none;
+		width: 4em;
+
+		&.active {
+			display: block;
+			cursor: pointer;
+		}
+	}
+
+	&__description {
+		text-align: center;
+	}
+
+	&__hr {
+		margin: 0 auto;
+		width: 60%;
+		height: 1px;
+		// border-top: 1px solid var(--darkblue);
+		color: var(--darkblue);
+		border-color: var(--darkblue);
+		@include m.margin-bottom(10px);
+	}
+
+	&__mas-info {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}

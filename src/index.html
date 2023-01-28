@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+
+<head lang="en">
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="author"
+		content="illustration, video-animation and design: Marcin Chylinski, HTML, CSS and JavaScript: Dominik Frackowiak" />
+	<meta name="description"
+		content="El proyecto busca facilitar la construcción de narrativas desde un enfoque decolonial e interseccional y espacios libres de prácticas excluyentes y racistas ¡Participa!" />
+	<script src="https://kit.fontawesome.com/097d9616c9.js"></script>
+	<link rel="stylesheet" href="./favicon.ico" />
+	<link rel="stylesheet" href="./sass/main.scss">
+	<title>¿Y tú encajas? (Des)iguales. Una mirada caleidoscópica.</title>
+</head>
+
+<body>
+	<!-- NAVIGATION-->
+
+	<div class="nav-icons">
+		<i class="nav-icon nav-icon__hamburger fa fa-bars" aria-hidden="true"></i>
+		<i class="nav-icon nav-icon__close fas fa-times"></i>
+	</div>
+
+	<nav class="nav nav-desktop">
+		<ul class="nav-desktop__ul">
+			<li class="nav-desktop__li">
+				<a class="nav-desktop__link" href="#inicio">Inicio</a>
+				<hr class="nav-desktop__hr" />
+			</li>
+			<li class="nav-desktop__li">
+				<a class="nav-desktop__link" href="#mapa">Mapa Yincana</a>
+				<hr class="nav-desktop__hr" />
+			</li>
+			<li class="nav-desktop__li">
+				<a class="nav-desktop__link" href="#nube">Nube de palabras</a>
+				<hr class="nav-desktop__hr" />
+			</li>
+			<li class="nav-desktop__li">
+				<a href="#cuidados" class="nav-desktop__link etapas cuidados"
+						>Etapas</a>
+				<hr class="class='nav-desktop__hr' etapas__hr" />
+				<ul class="etapas__ul">
+					<li class="etapas__li">
+						<a class="etapas__link active" href="#cuidados">Cuidados</a>
+					</li>
+					<li class="etapas__li">
+						<a class="etapas__link" href="#educacion">Educación</a>
+					</li>
+					<li class="etapas__li">
+						<a class="etapas__link" href="#sanidad">Sanidad</a>
+					</li>
+					<li class="etapas__li">
+						<a class="etapas__link" href="#cultura">Cultura</a>
+					</li>
+					<li class="etapas__li">
+						<a class="etapas__link" href="#vivienda">Vivienda</a>
+					</li>
+					<li class="etapas__li">
+						<a class="etapas__link" href="#opinion">¿Y tú qué opinas?</a>
+					</li>
+				</ul>
+			</li>
+			<li class="nav-desktop__li">
+				<a class="nav-desktop__link" href="#nosotros">Quiénes somos</a>
+				<hr class="nav-desktop__hr" />
+			</li>
+			<li class="nav-desktop__li">
+				<a class="nav-desktop__link" href="#contacto">Contacto</a>
+				<hr class="nav-desktop__hr" />
+			</li>
+		</ul>
+	</nav>
+
+	<nav class="nav-mobile">
+		<a onclick="void(0)" class="nav-mobile__link" href="#mapa"
+				>Mapa Yincana</a>
+		<a onclick="void(0)" class="nav-mobile__link" href="#nube"
+				>Nube de palabras</a>
+		<a
+				onclick="void(0)"
+				class="nav-mobile__link nav-mobile__link--etapas"
+				href="#"
+				>Etapas</a>
+		<a
+				onclick="void(0)"
+				class="nav-mobile__link nav-mobile__link--red"
+				href="#cuidados"
+				>Cuidados</a>
+		<a
+				onclick="void(0)"
+				class="nav-mobile__link nav-mobile__link--red"
+				href="#educacion"
+				>Educación</a>
+		<a
+				onclick="void(0)"
+				class="nav-mobile__link nav-mobile__link--red"
+				href="#sanidad"
+				>Sanidad</a>
+		<a
+				onclick="void(0)"
+				class="nav-mobile__link nav-mobile__link--red"
+				href="#cultura"
+				>Cultura</a>
+		<a
+				onclick="void(0)"
+				class="nav-mobile__link nav-mobile__link--red"
+				href="#vivienda"
+				>Vivienda</a>
+		<a
+				onclick="void(0)"
+				class="nav-mobile__link nav-mobile__link--red"
+				href="#opinion"
+				>¿Y tú qué opinas?</a>
+		<a onclick="void(0)" class="nav-mobile__link" href="#nosotros"
+				>Quiénes somos</a>
+		<a onclick="void(0)" class="nav-mobile__link" href="#contacto"
+				>Contacto</a>
+	</nav>
+
+	<!-- SECTION HERO VIDEO -->
+	<section id="inicio" class="hero-video">
+		<video class="hero-video__video" autoplay muted loop id="main-video">
+			<source src="./video/web.mp4" type="video/mp4" />
+		</video>
+
+		<h2 class="hero-video__header main-header">
+			<span class="span-ish">?</span>Y tú encajas?
+		</h2>
+		<a onclick="void(0)" class="hero-video__more-link btn" href="#info"
+				>&gt &gt &gt more info &lt &lt &lt</a>
+	</section>
+
+	<!-- SECTION MORE INFO -->
+	<section class="section section-info" id="info">
+		<div class="section__wrapper">
+			<h2 class="section-info__header main-header">
+				<span class="span-ish">?</span>Y tú encajas?
+			</h2>
+			<h3 class="section-info__header3">Des(iguales)</h3>
+			<h4 class="section-info__header4">Una mirada caleidoscópica</h4>
+			<div class="section-info__descript-wrapper">
+				<p>
+					Tomar conciencia de los privilegios y opresiones relacionados con el
+					cuerpo y el lugar que nos ha tocado habitar nos hace entender que las
+					opresiones no se desarrollan solo en las relaciones entre personas
+					particulares, sino que se configuran en las relaciones de poder
+					ínsitas en las estructuras sociales. Pero, ¿cómo podemos participar en
+					la construcción de un derecho a la ciudad como un espacio en el que
+					todas las identidades sean respetadas y puedan convivir valorando sus
+					diferencias en lugar de ser eliminadas, invisibilizadas y reprimidas?</p>
+				<p>
+					El presente proyecto busca facilitar la construcción de narrativas y
+					espacios de convivencia libres de prácticas excluyentes, clasistas y
+					racistas y propone la construcción de un caleidoscopio, metáfora de la
+					construcción participativa de un conocimiento crítico que, rechazando
+					las categorías cerradas del razonamiento binario, se construya desde
+					la intersección de distintas experiencias, condiciones, y caminos de
+					vida.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- SECTION MAPA -->
+	<section class="section section-map" id="mapa">
+		<div class="section__wrapper">
+
+			<h2 class="section-map__header"><span class="span-ish">!</span> Participa en Yincana!</h2>
+			<h3 class="section-map__header3">forma parte de la construcción de nuevas narrativas decoloniales</h3>
+			<div class="section-map__map-legend-descript-wrapper">
+				<img class="section-map__map" src="./img/mapa.svg" alt="mapa de barrio lavapiés">
+				<div class="section-map__descript-wrapper">
+					<p class="section-map__p">
+						En el mapa se indican las 5 etapas que corresponden a los ámbitos trabajados en el
+						proyecto:
+						cuidados, educación, sanidad, cultura participada, vivienda. En cada etapa
+						encontrarás un código
+						QR que te permitirá acceder a los audios relacionados con el ámbito de referencia.
+						Después de
+						haber escuchado los audios podrás compartir tu punto de vista sobre la temática
+						abordada
+						indicando cómo este ámbito de vida podría ser más inclusivo. Tus palabras se
+						incluirán dentro
+						del caleidoscopio, que se irá moviendo y alimentando por los distintos puntos de
+						vistas
+						compartidos por cada una de las personas participantes.
+					</p>
+					<div class="section-map__legend-wrapper">
+
+						<div class="map-legend">
+							<img class="map-legend__img" src="./img/cuidados.svg" alt="">
+							<p class="map-legend__p">Cuidados</p>
+						</div>
+						<div class="map-legend">
+							<img class="map-legend__img" src="./img/educacion.svg" alt="">
+							<p class="map-legend__p">Educación</p>
+						</div>
+						<div class="map-legend">
+							<img class="map-legend__img" src="./img/sanidad.svg" alt="">
+							<p class="map-legend__p">Sanidad</p>
+						</div>
+						<div class="map-legend">
+							<img class="map-legend__img" src="./img/cultura.svg" alt="">
+							<p class="map-legend__p">Cultura</p>
+						</div>
+						<div class="map-legend">
+							<img class="map-legend__img" src="./img/vivienda.svg" alt="">
+							<p class="map-legend__p">Vivienda</p>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<!-- SECTION CLOUD -->
+
+	<section class="section section-cloud" id="nube">
+		<div class="section__wrapper">
+			<h2>
+				<span class="nube-title-bigger">Nube</span><span class="nube-title-smaller">de palabras</span>
+			</h2>
+			<blockquote class="section-cloud__quote">“El caleidoscopio permite ver las cosas de forma distinta y
+				construir nuevas
+				imágenes
+				relacionadas
+				con nuevas
+				realidades. No es solo un tema de puntos de vista sino de puntos de acciones. El
+				caleidoscopio es
+				una
+				herramienta que devuelve imágenes distintas, sin centros ni periferias. Haciendo rodear
+				el
+				caleidoscopio,
+				moviendo los vidrios coloridos que están en su interior, la imagen se transforma y
+				aparecen nuevas
+				constelaciones coloridas. El caleidoscopio nos permite ver la “pluriversidad” del
+				sistema mundo.
+				Aceptar la
+				propuesta decolonial no pasa solo por ponerse las lentes con las que miramos la
+				realidad, sino
+				cambiar las
+				herramientas con la que la miramos, interpretamos y nos proyectamos en ella” (Rachele
+				Borghi, 2020.
+				Decolonialitá e privilegio)
+			</blockquote>
+			<div class="word-cloud-wrapper">
+
+			</div>
+		</div>
+	</section>
+
+	<!-- S T E P S -->
+	<!-- C U I D A D O S -->
+	<section id="cuidados" class="section section-steps section-steps--light-red">
+		<div class="section__wrapper">
+			<h2 class="section-steps__header"><img class="section-steps__icon" src="./img/1.png" alt=""><span class="section-steps__span">Cuidados</span></h2>
+			<p class="etapas-description">El concepto de “cuidados” es muy amplio, sin embargo, todas sus
+				acepciones se
+				ven atravesadas y marcadas por los diferentes ejes de desigualdad como él género, la raza,
+				la clase
+				social o la edad. Haciendo que su responsabilidad caiga la mayoría de las veces sobre las
+				mismas
+				personas perpetuando así las desigualdades estructurales ya existentes. <br>
+				¡Escucha los audios y comparte tu experiencia relacionada con este ámbito!</p>
+			<button class="btn btn-participa btn-participa--dark-blue"><a class="btn-participa__a" href="#opinion">Participa en Yincana</a></button>
+			<div class="all-audio-wrapper">
+
+				 <div class="audio-wrapper"> 	<!--  single audio wrapper -->
+			     <audio class="audio-wrapper__player" src="audio/cuidados_1.mp3"></audio>
+					   <div class="audio-wrapper__controls">
+						     <img class="audio-wrapper__icon audio-wrapper__icon--play active" src="./img/play_white.png" alt="">
+					      <img class="audio-wrapper__icon audio-wrapper__icon--pause" src="./img/pause_white.png" alt="">
+						  </div>
+						  <h4 class="audio-wrapper__description">audio 1</h4>
+								<hr class="audio-wrapper__hr">
+					   <a class="audio-wrapper__a" href="#cuidados-audio1"><p class="audio-wrapper__mas-info"><span class="span-mas-info">más info</span><span class="span-plus">+++</span></p></a>
+				</div> <!--  end single audio wrapper -->
+
+				<div class="audio-wrapper"> 	<!--  single audio wrapper -->
+			     <audio class="audio-wrapper__player" src="audio/cuidados_1.mp3"></audio>
+					   <div class="audio-wrapper__controls">
+						     <img class="audio-wrapper__icon audio-wrapper__icon--play active" src="./img/play_white.png" alt="">
+					      <img class="audio-wrapper__icon audio-wrapper__icon--pause" src="./img/pause_white.png" alt="">
+						  </div>
+						  <h4 class="audio-wrapper__description">audio 2</h4>
+								<hr class="audio-wrapper__hr">
+					   <a href="#cuidados-audio1"><p class="audio-wrapper__mas-info"><span class="span-mas-info">más info</span><span class="span-plus">+++</span></p></a>
+				</div> <!--  end single audio wrapper -->
+
+				<div class="audio-wrapper"> 	<!--  single audio wrapper -->
+			     <audio class="audio-wrapper__player" src="audio/cuidados_1.mp3"></audio>
+					   <div class="audio-wrapper__controls">
+						     <img class="audio-wrapper__icon audio-wrapper__icon--play active" src="./img/play_white.png" alt="">
+					      <img class="audio-wrapper__icon audio-wrapper__icon--pause" src="./img/pause_white.png" alt="">
+						  </div>
+						  <h4 class="audio-wrapper__description">audio 3</h4>
+								<hr class="audio-wrapper__hr">
+					   <a href="#cuidados-audio1"><p class="audio-wrapper__mas-info"><span class="span-mas-info">más info</span><span class="span-plus">+++</span></p></a>
+				</div> <!--  end single audio wrapper -->
+		
+			</div> <!--  all audio wrapper -->
+			<!-- hidden divs mas info -->
+			<div class="transcription audio1">
+				 <div class="transcription__header">
+					  <h3>audio 1</h3>
+					  <div class="transcription__close"><span>+</span></div>
+				 </div>
+				 <p>
+							<span class="voz">Voz 1:</span> La colonialidad es el mix entre colonialismo,
+							modernidad,
+							racismo y capitalismo, en
+							elaboración que hemos entrado en 1492 y con el que se ha formado el
+							sistema-mundo en el que
+							vivimos y del
+							que no hemos salido nunca. <br>
+							<span class="voz">Voz 2:</span> Distancia <br>
+							<span class="voz">Voz 3:</span> Distante <br>
+							<span class="voz">Voz 2:</span> Distinto <br>
+							<span class="voz">Voz 3:</span> Diferencia <br>
+							<span class="voz">Voz 2:</span> Deferencia <br>
+							<span class="voz">Voz 3:</span> Deferente <br>
+							<span class="voz">Voz 1:</span> Decolonizar es cuestionarse continuamente sobre
+							los márgenes
+							de
+							movimiento, sobre las
+							prácticas individuales, sobre las colectivas, sobre las micro-políticas y sobre
+							los
+							macro-sistemas <br>
+							<span class="voz">Voz 3:</span> Te abrazo en la distancia <br>
+							<span class="voz">Voz 2:</span> de los mares <br>
+							<span class="voz">Voz 3:</span> Te abrazo en la diferencia <br>
+							<span class="voz">Voz 2:</span> de nuestros cuerpos <br>
+							<span class="voz">Voz 3:</span> Un abrazo deferente <br>
+							<span class="voz">Voz 2:</span> de mi gente <br>
+							<span class="voz">Voz 2:</span> de tu gente <br>
+							<span class="voz">Voz 3:</span> a mi gente <br>
+							<span class="voz">Voz 1:</span> Combatir la sensación de vértigo que te genera
+							cuando te
+							visualizas a ti misma en el sistema-mundo, cuando entiendes que las injusticias son demasiado grandes
+							para ser
+							eliminadas
+							<br>
+							<span class="voz">Voz 2:</span> Abrázame <br>
+							<span class="voz">Voz 3:</span> Estás muy lejos <br>
+							<span class="voz">Voz 2:</span> No te rindas <br>
+							<span class="voz">Voz 3:</span> Estoy muy lejos <br>
+							<span class="voz">Voz 1:</span> que el mundo en el que vives
+							no es el mejor de todos los mundos posible
+							y que nunca lo será y que probablemente estos otros mundos, posiblemente
+							mejores, nunca
+							reemplazarán al mundo dominante <br>
+							<span class="voz">Voz Testimonio:</span> Soy un hombre blanco, español,
+							heterosexual, con
+							una
+							educación universitaria y
+							de ingresos económicos medios. Supongo que estoy en el epicentro de la
+							normatividad. Pienso
+							en
+							el ámbito de los cuidados y me pregunto qué me gustaría que cambiase para que
+							todas las
+							personas
+							nos sintiésemos así, cuidadas. Cuidadas por las instituciones, por las
+							empresas... en
+							definitiva
+							cuidadas por las personas que nos conocen y las que no nos conocen. Creo que el
+							ser humano
+							es
+							bueno. Creo que cuando mejor se siente es cuando cuida y es cuidado: en el
+							abrazo. Todos
+							queremos abrazar y que nos abracen. Pero somos educados en la competencia y en
+							la envidia.
+							Hablo
+							de cuidados... pero pienso en educación. Una educación del abrazo que supere
+							cualquier tipo
+							de
+							normatividad.
+						</p>
+				  <p class="transcription__legend">Los textos están basados en el libro de Rachele Borghi, 2020,
+					<i>Decolonialitá e
+						privilegio</i> .</p>
+			</div>
+
+			<div class="transcription audio2">
+				 <div class="transcription__header">
+					  <h3>audio 2</h3>
+					  <div class="transcription__close"><span>+</span></div>
+				 </div>
+						<p>
+							<span class="voz">Voz 1:</span> Decolonializar significa compartir prácticas de
+							decolonialidad y
+							crear colectivamente sus
+							territorios. Es un proyecto colectivo pero no es único: es un proyecto plural,
+							de
+							pluriversidad.
+							<br>
+       <span class="voz">Voz 2:</span> Soy distinta <br>
+							<span class="voz">Voz 3:</span> Entra <br>
+							<span class="voz">Voz 2:</span> Vengo de lejos <br>
+							<span class="voz">Voz 3:</span> Entra <br>
+							<span class="voz">Voz 2:</span> Lejos en muchos sentidos <br>
+							<span class="voz">Voz 3:</span> Entra <br>
+							<span class="voz">Voz 2:</span> Gracias <br>
+							<span class="voz">Voz 3:</span> Es solo el primer paso <br>
+							<span class="voz">Voz 1:</span> Es necesario crear las condiciones para que
+							diferentes
+							puntos de
+							vista, puedan partir de
+							diferentes puntos del mundo, para que los lugares de enunciación puedan
+							multiplicarse...<br>
+							<span class="voz">Voz 3:</span> Toma las riendas <br>
+							<span class="voz">Voz 2:</span> Vengo de lejos <br>
+							<span class="voz">Voz 3:</span> Llévanos a otro camino <br>
+							<span class="voz">Voz 2:</span> No soy como vosotras <br>
+							<span class="voz">Voz 3:</span> Queremos ver otras formas <br>
+							<span class="voz">Voz 2:</span> Temo que no os gusten <br>
+							<span class="voz">Voz 3:</span> ¿Qué te preocupa? <br>
+							<span class="voz">Voz 2:</span> Necesito que me quieran <br>
+					  <span class="voz">Voz 1:</span> Pensar decolonialmente un mundo pluriversal,
+							significa
+							imaginarlo como un archipiélago de
+							puntos de enunciación, una constelación de micropolíticas de decolonialidad, de
+							laboratorios
+							de
+							experimentación, a partir de los propios posicionamientos y privilegios. <br>
+							<span class="voz">Voz 2:</span> Ahora que me habéis visto desnuda <br>
+							<span class="voz">Voz 3:</span> Te queremos <br>
+							<span class="voz">Voz 2:</span> Ahora que ya sabéis la verdad <br>
+							<span class="voz">Voz 3:</span> Te queremos <br>
+							<span class="voz">Voz 1:</span> Nuestra transformación, individual y colectiva,
+							se da a
+							través
+							de la construcción de un
+							espacio creativo radical, capaz de afirmar y sostener nuestra subjetividad, de
+							asignarnos
+							una
+							nueva posición desde la que articular nuestro sentido del mundo. La mía es una
+							invitación
+							firme.
+							Entrad en ese espacio. Encontrémonos allí" <br>
+							<span class="voz">Voz Testimonio:</span> Como mujer he sentido que llevaba mucha
+							carga
+							respecto
+							a los cuidados hacia mi
+							familia. Tener que alejarme de mi casa por temas laborales me hizo vivir unos
+							sentimientos
+							de
+							culpa que quizá no habría tenido si hubiera sido hombre. Me gustaría que mis
+							hermanos
+							compartiesen esa carga. Es más, me gustaría que no lo sintiésemos como una
+							carga, sino como
+							un
+							placer compartido, el placer de cuidar a aquellos que nos han cuidado y que nos
+							cuidarán. Un
+							círculo de cuidados para el que todas las personas hemos sido educadas, y para
+							el que el
+							nuestra
+							sociedad deja suficiente espacio. Eso que llaman conciliación.
+						</p>
+				  <p class="legend">Los textos están basados en el libro de Rachele Borghi, 2020,
+					<i>Decolonialitá e
+						privilegio</i> .
+				</p>
+			</div>
+
+			<div class="transcription
+			 audio3">
+				 <div class="transcription__header">
+					  <h3>audio 3</h3>
+					  <div class="transcription__close"><span>+</span></div>
+				 </div>
+						<p>
+							<span class="voz">Voz 2:</span> Nos miran <br>
+							<span class="voz">Voz 3:</span> Se acercan <br>
+							<span class="voz">Voz 1:</span> Es un fuerte cambio en el significado: los
+							márgenes se
+							convierten en espacios para crear,
+							compartir, elaborar estrategias colectivas. <br>
+							<span class="voz">Voz 3:</span> No sé de qué me acusas <br>
+							<span class="voz">Voz 2:</span> De querer invadir el centro <br>
+							<span class="voz">Voz 3:</span> Solo quiero tu abrazo <br>
+							<span class="voz">Voz 2:</span> Mientes <br>
+							<span class="voz">Voz 3:</span> ¿Qué te preocupa? <br>
+							<span class="voz">Voz 2:</span> Quieres destruir mi centro <br>
+							<span class="voz">Voz 3:</span> Solo quiero tu abrazo <br>
+							<span class="voz">Voz 2:</span> ¿Y si no te lo doy? <br>
+							<span class="voz">Voz 3:</span> Te quedarás sin el mío. <br>
+							<span class="voz">Voz 1:</span> Contraespácios
+							donde pararse para pensar, imaginar, buscar, encontrar, probar distintas formas
+							de vivir el
+							mundo. <br>
+							<span class="voz">Voz 2:</span> En el borde del suicidio <br>
+							<span class="voz">Voz 3:</span> Aquí tienes mi margen <br>
+						 <span class="voz">Voz 2:</span> Yo quiero el centro <br>
+							<span class="voz">Voz 3:</span> Mira al centro de mi margen <br>
+							<span class="voz">Voz 1:</span> El margen como espacio contra-hegemónico es el
+							lugar donde
+							se
+							ponen en círculo las
+							experiencias, condiciones, caminos de vida. Un lugar privilegiado para crear
+							pero también
+							para
+							observar. <br>
+							<span class="voz">Voz Testimonio:</span> Mi sexualidad nunca ha sido un problema
+							en mi
+							ámbito
+							familiar aunque reivindicar
+							mi derecho a elegir me ha supuesto mucho momentos de pararme a pensar,
+							deconstruirme,
+							confrontarme y volver a plantearme nuevas cuestiones. Quizá me ha supuesto más
+							problema en
+							el
+							ámbito social, en la ciudad, con los vecinos. Sé que muchas personas me miran
+							con juicio en
+							los
+							ojos. Sé que piensan que soy raro. No me importa que piensen que soy diferente a
+							ellas en
+							algunas cosas, pero me gustaría me miren como a una persona más, una persona a
+							la que le
+							gusta
+							cuidar y ser cuidado. Así me gustaría que fuera mi ciudad, una ciudad de
+							cuidados entre
+							personas, a pesar de sus diferencias.
+						</p>
+					 <p class="legend">Los textos están basados en el libro de Rachele Borghi, 2020,
+					<i>Decolonialitá e
+						privilegio</i> .
+				</p>
+			</div>
+		</div>
+	</section>
+
+
+
+	<script src="./js/main.js" type="module"></script>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+//SECTION HERO VIDEO
+.hero-video {
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	height: 100vh;
+	overflow: hidden;
+	background-color: #2d348c;
+
+	@media (min-wight: 992px) {
+		top: 56px;
+	}
+
+	&__video {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		height: auto;
+		// max-height: 100vh;
+		width: 390%;
+		z-index: 0;
+
+		@media (min-width: 576px) {
+			width: 250%;
+		}
+
+		@media (min-width: 992px) {
+			width: 150%;
+		}
+	}
+
+	&__header {
+		position: absolute;
+		top: 18%;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 1;
+
+		@media (min-width: 992px) {
+			top: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+
+	&__more-link {
+		position: absolute;
+		bottom: 18%;
+		left: 50%;
+		transform: translateX(-50%);
+		transition: transform 0.4s;
+
+		@media (min-width: 992px) {
+			bottom: 18%;
+		}
+
+		&:hover {
+			transform: translateX(-50%) scale(1.03);
+		}
+	}
+}
