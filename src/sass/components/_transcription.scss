@@ -7,7 +7,18 @@
 	left: 0;
 	width: 100%;
 	transition: 7s;
-	background-color: var(--lightred);
+
+	&--light-red {
+		background-color: var(--lightred);
+	}
+
+	&--light-blue {
+		background-color: var(--lightblue);
+	}
+
+	&--white {
+		background-color: var(--white);
+	}
 
 	&__header {
 		display: flex;
@@ -19,7 +30,7 @@
 		transform: rotate(45deg);
 		font-size: 25px;
 		font-weight: bold;
-		padding: 20px;
+		padding: 0 0 20px 20px;
 		cursor: pointer;
 	}
 }
@@ -27,7 +38,7 @@
 .transcription.active {
 	display: block;
 	margin: 0;
-	padding: 0;
+	padding: 20px;
 	top: 0;
 	left: 0;
 }

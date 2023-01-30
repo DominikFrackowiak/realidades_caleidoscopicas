@@ -35,6 +35,10 @@
 
 	&__description {
 		text-align: center;
+
+		&--light-blue {
+			color: var(--lightblue);
+		}
 	}
 
 	&__hr {
@@ -45,11 +49,20 @@
 		color: var(--darkblue);
 		border-color: var(--darkblue);
 		@include m.margin-bottom(10px);
+
+		&--light-red {
+			color: var(--lightred);
+			border-color: var(--lightred);
+		}
 	}
 
 	&__mas-info {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+
+		&--light-blue {
+			color: var(--lightblue);
+		}
 	}
 }

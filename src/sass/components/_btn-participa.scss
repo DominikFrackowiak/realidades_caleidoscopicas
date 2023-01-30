@@ -19,6 +19,22 @@
 		}
 	}
 
+	&--light-red {
+		background-color: var(--lightred);
+
+		&:hover {
+			background-color: var(--red);
+		}
+	}
+
+	&--light-blue {
+		background-color: var(--lightblue);
+
+		&:hover {
+			background-color: var(--darkblue);
+		}
+	}
+
 	&__a {
 		color: inherit;
 	}

@@ -4,9 +4,17 @@
 		display: flex;
 		text-align: left;
 		align-items: center;
+
+		&--light-red {
+			color: var(--lightred);
+		}
+
+		&--light-blue {
+			color: var(--lightblue);
+		}
 	}
 	&__icon {
-		height: 35px;
+		height: 32px;
 
 		@media (min-width: 576px) {
 			height: 40px;
@@ -23,9 +31,21 @@
 		padding-left: 10px;
 	}
 
+	.etapas-description {
+		&--light-red {
+			color: var(--lightred);
+		}
+	}
+
 	&--light-red {
 		background-color: var(--lightred);
 	}
+
+	&--light-blue {
+		background-color: var(--lightblue);
+	}
+
+	&--white {
+		background-color: var(--white);
+	}
 }
-
-
