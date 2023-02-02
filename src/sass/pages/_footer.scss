@@ -1,0 +1,28 @@
+.footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+
+	@media (min-width: 992px) {
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	&__logo {
+		width: 60%;
+	}
+
+	&__column {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: start;
+		width: 100%;
+		border: 1px solid red;
+
+		@media (min-width: 992px) {
+			width: 47%;
+		}
+	}
+}

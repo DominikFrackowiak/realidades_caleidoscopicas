@@ -1,0 +1,26 @@
+.section-nosotros {
+	&__wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: start;
+		justify-content: center;
+
+		@media (min-width: 992px) {
+			justify-content: space-between;
+		}
+	}
+	&__p {
+		width: 100%;
+
+		@media (min-width: 992px) {
+			width: 47%;
+		}
+	}
+	&__a{
+		color: var(--lightblue);
+
+		&:hover{
+			color: var(--lightred);
+		}
+	}
+}

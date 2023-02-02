@@ -1,0 +1,40 @@
+.opinion-span {
+	width: 100%;
+	&--two {
+		padding-left: 10%;
+	}
+}
+
+.opinion-form {
+	display: flex;
+	flex-direction: column;
+	margin-top: 30px;
+
+	@media (min-width: 576px) {
+		width: 50%;
+		margin-left: 50%;
+	}
+	&__label,
+	&__btn,
+	&__input {
+		font-size: 1.1rem;
+		height: 30px;
+		border: none;
+		margin-bottom: 20px;
+	}
+
+	&__label {
+		color: var(--darkblue);
+	}
+
+	&__btn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: var(--darkblue);
+		width: 45%;
+		align-self: flex-end;
+		// padding: 20px 20px;
+		cursor: pointer;
+	}
+}

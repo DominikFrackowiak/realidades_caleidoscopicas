@@ -5,3 +5,47 @@
 	--lightblue: #364ec6;
 	--darkblue: #2e3192;
 }
+
+//BACKGROUND COLORS
+
+.bg-white {
+	background-color: var(--white);
+}
+
+.bg-lightred {
+	background-color: var(--lightred);
+}
+
+.bg-red {
+	background-color: var(--red);
+}
+
+.bg-lightblue {
+	background-color: var(--lightblue);
+}
+
+.bg-darkblue {
+	background-color: var(--darkblue);
+}
+
+//TEXT COLORS
+
+.white {
+	color: var(--white);
+}
+
+.lightred {
+	color: var(--lightred);
+}
+
+.red {
+	color: var(--red);
+}
+
+.lightblue {
+	color: var(--lightblue);
+}
+
+.darkblue {
+	color: var(--darkblue);
+}

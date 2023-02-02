@@ -1,10 +1,10 @@
 .section-map {
 	background-color: var(--white);
-	color: var(--lightblue);
+	// color: var(--lightblue);
 
-	&__header {
-		color: var(--red);
-	}
+	// &__header {
+	// 	color: var(--red);
+	// }
 
 	&__header3 {
 		text-align: center;
@@ -60,7 +60,7 @@
 		display: flex;
 		justify-content: start;
 		align-items: center;
-		color: var(--lightblue);
+		// color: var(--lightblue);
 		font-size: 1rem;
 	}
 }

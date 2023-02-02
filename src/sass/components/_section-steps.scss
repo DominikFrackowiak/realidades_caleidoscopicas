@@ -5,14 +5,15 @@
 		text-align: left;
 		align-items: center;
 
-		&--light-red {
-			color: var(--lightred);
-		}
-
-		&--light-blue {
-			color: var(--lightblue);
+		&--longer-title {
+			width: 100%;
+			display: flex;
+			justify-content: start;
+			align-items: center;
+			flex-wrap: wrap;
 		}
 	}
+
 	&__icon {
 		height: 32px;
 
@@ -29,23 +30,5 @@
 		display: block;
 		margin-top: 4px;
 		padding-left: 10px;
-	}
-
-	.etapas-description {
-		&--light-red {
-			color: var(--lightred);
-		}
-	}
-
-	&--light-red {
-		background-color: var(--lightred);
-	}
-
-	&--light-blue {
-		background-color: var(--lightblue);
-	}
-
-	&--white {
-		background-color: var(--white);
 	}
 }

@@ -33,7 +33,7 @@ h2 {
 	width: 100%;
 	text-align: center;
 	font-family: '1,617';
-	font-size: 2rem;
+	font-size: 1.5rem;
 	@include m.margin-bottom(25px);
 
 	@media (min-width: 768px) {
@@ -70,7 +70,8 @@ h4 {
 	}
 }
 
-.btn {
+.btn,
+label {
 	font-family: '1,617';
 	font-size: 0.97rem;
 	color: var(--white);
@@ -107,3 +108,5 @@ p {
 .voz {
 	font-weight: bold;
 }
+
+
