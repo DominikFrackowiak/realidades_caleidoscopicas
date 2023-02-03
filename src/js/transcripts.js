@@ -1,7 +1,7 @@
 import htmlElements from './htmlElements'
 const { linksToTranscripts, transcripts, closeTranscriptXs } = htmlElements
 
-const sectionSteps = () => {
+const handleTranscripts = () => {
 	linksToTranscripts.forEach((link, index) => {
 		link.addEventListener('click', () => {
 			transcripts[index].classList.add('active')
@@ -42,4 +42,4 @@ const sectionSteps = () => {
 	})
 }
 
-export default sectionSteps
+export default handleTranscripts

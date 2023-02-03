@@ -1,11 +1,13 @@
-import sectionSteps from './sectionSteps'
+import handleTranscripts from './transcripts'
 import playPauseAudioHandler from './audioPlayer'
 import handleMobileNavigation from './navigationMobile'
+import handleHamburgerStyle from './hamburgerMenu'
 
 const init = () => {
-	sectionSteps()
+	handleTranscripts()
 	playPauseAudioHandler()
 	handleMobileNavigation()
+	handleHamburgerStyle()
 }
 
 document.addEventListener('DOMContentLoaded', init)

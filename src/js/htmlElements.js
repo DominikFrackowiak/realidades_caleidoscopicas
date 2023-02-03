@@ -1,4 +1,5 @@
 const htmlElements = {
+	sections: [...document.querySelectorAll('.section')],
 	transcripts: document.querySelectorAll('.transcription'),
 	linksToTranscripts: document.querySelectorAll('.audio-wrapper__a'),
 	closeTranscriptXs: document.querySelectorAll('.transcription__close'),
@@ -9,6 +10,7 @@ const htmlElements = {
 	xClose: document.querySelector('.nav-icon__close'),
 	navMobile: document.querySelector('nav.nav-mobile'),
 	mobileNavLinks: [...document.querySelectorAll('.nav-mobile__link')],
+	whiteBackgroundSections: [...document.querySelectorAll('.bg-white')],
 }
 
 export default htmlElements
