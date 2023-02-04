@@ -4,11 +4,16 @@ const { linksToTranscripts, transcripts, closeTranscriptXs } = htmlElements
 const handleTranscripts = () => {
 	linksToTranscripts.forEach((link, index) => {
 		link.addEventListener('click', () => {
+			transcripts.forEach(transcript => {
+				if (transcript.closest('section').classList.contains('bg-white')) {
+					transcript.closest('section').style.backgroundColor = 'var(--white)'
+				}
+				transcript.classList.remove('active')
+				transcript.closest('section').style.minHeight = `100vh`
+			})
 			transcripts[index].classList.add('active')
 			if (
-				transcripts[index]
-					.closest('section')
-					.classList.contains('section-steps--white')
+				transcripts[index].closest('section').classList.contains('bg-white')
 			) {
 				transcripts[index].closest('section').style.backgroundColor =
 					'var(--lightblue)'
@@ -31,9 +36,7 @@ const handleTranscripts = () => {
 			transcripts[index].closest('section').style.minHeight = `100vh`
 			transcripts[index].closest('section').style.alignItems = 'center'
 			if (
-				transcripts[index]
-					.closest('section')
-					.classList.contains('section-steps--white')
+				transcripts[index].closest('section').classList.contains('bg-white')
 			) {
 				transcripts[index].closest('section').style.backgroundColor =
 					'var(--white)'

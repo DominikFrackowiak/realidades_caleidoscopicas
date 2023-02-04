@@ -87,6 +87,9 @@
 				color: var(--darkblue);
 				z-index: 200;
 				background-color: var(--white);
+				&.active {
+					border-bottom: 3px solid var(--lightred);
+				}
 			}
 			&__hr {
 				display: none;

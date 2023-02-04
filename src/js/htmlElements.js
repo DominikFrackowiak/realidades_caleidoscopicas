@@ -10,7 +10,7 @@ const htmlElements = {
 	xClose: document.querySelector('.nav-icon__close'),
 	navMobile: document.querySelector('nav.nav-mobile'),
 	mobileNavLinks: [...document.querySelectorAll('.nav-mobile__link')],
-	whiteBackgroundSections: [...document.querySelectorAll('.bg-white')],
+	navLinks: [...document.querySelectorAll('.nav-link')]
 }
 
 export default htmlElements
