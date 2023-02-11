@@ -64,11 +64,6 @@
 	}
 
 	&__contact {
-		* {
-			margin: 0;
-			padding: 0;
-		}
-
 		@media (min-width: 992px) {
 			text-align: right;
 		}
