@@ -1,4 +1,8 @@
 .footer {
+	* {
+		margin: 0;
+		padding: 0;
+	}
 	display: flex;
 	justify-content: center;
 	align-items: start;
@@ -7,12 +11,17 @@
 		flex-direction: column;
 		justify-content: start;
 		align-items: center;
+		padding: 20px 0;
 
 		@media (min-width: 992px) {
 			flex-direction: row;
 			align-items: start;
 			justify-content: space-between;
 		}
+	}
+
+	&__header {
+		margin-bottom: 20px;
 	}
 
 	&__logo {
@@ -31,9 +40,11 @@
 		align-items: start;
 		width: 100%;
 
+		padding: 20px 0;
+
 		@media (min-width: 992px) {
 			width: 47%;
-			height: 200px;
+			height: 250px;
 		}
 
 		&--1 {

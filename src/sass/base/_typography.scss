@@ -34,7 +34,7 @@ h2 {
 	text-align: center;
 	font-family: '1,617';
 	font-size: 1.5rem;
-	@include m.margin-bottom(25px);
+	@include m.margin-bottom(20px);
 
 	@media (min-width: 768px) {
 		font-size: 2.5rem;
@@ -48,7 +48,7 @@ h2 {
 h3 {
 	font-family: 'Galano Grotesque Medium';
 	font-size: 1.2rem;
-	@include m.margin-bottom(10px);
+	@include m.margin-bottom(20px);
 	@media (min-width: 768px) {
 		font-size: 1.8rem;
 	}
@@ -60,7 +60,7 @@ h3 {
 h4 {
 	font-family: 'Galano Grotesque Regular';
 	font-size: 1.1rem;
-	@include m.margin-bottom(10px);
+	@include m.margin-bottom(20px);
 	@media (min-width: 768px) {
 		font-size: 1.6rem;
 	}

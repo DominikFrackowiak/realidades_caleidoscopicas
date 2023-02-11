@@ -2,6 +2,13 @@ import htmlElements from './htmlElements'
 const { linksToTranscripts, transcripts, closeTranscriptXs } = htmlElements
 
 const handleTranscripts = () => {
+	const handleHightAndAligment = (index, height, aligment) => {
+		transcripts[index].closest('section').style.minHeight = `${
+			typeof height === 'number' ? `${height}px` : height
+		}`
+		transcripts[index].closest('section').style.alignItems = `${aligment}`
+	}
+
 	linksToTranscripts.forEach((link, index) => {
 		link.addEventListener('click', () => {
 			transcripts.forEach(transcript => {
@@ -19,22 +26,19 @@ const handleTranscripts = () => {
 					'var(--lightblue)'
 			}
 			const height = transcripts[index].offsetHeight
-			transcripts[index].closest('section').style.minHeight = `${height}px`
-			transcripts[index].closest('section').style.alignItems = 'start'
+			handleHightAndAligment(index, height, 'start')
 		})
 
 		window.addEventListener('resize', () => {
 			const height = transcripts[index].offsetHeight
-			transcripts[index].closest('section').style.minHeight = `${height}px`
-			transcripts[index].closest('section').style.alignItems = 'start'
+			handleHightAndAligment(index, height, 'start')
 		})
 	})
 
 	closeTranscriptXs.forEach((link, index) => {
 		link.addEventListener('click', () => {
 			transcripts[index].classList.remove('active')
-			transcripts[index].closest('section').style.minHeight = `100vh`
-			transcripts[index].closest('section').style.alignItems = 'center'
+			handleHightAndAligment(index, '100vh', 'center')
 			if (
 				transcripts[index].closest('section').classList.contains('bg-white')
 			) {

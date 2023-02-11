@@ -34,7 +34,7 @@
 
 	&__close {
 		display: none;
-		color: #2d348c;
+		color: var(--darkblue);
 		@media (min-width: 992px) {
 			display: none;
 		}
@@ -47,13 +47,13 @@
 		display: none;
 
 		@media (min-width: 992px) {
-			display: block;
+			display: flex;
+			justify-content: center;
 			position: fixed;
 			top: 0;
-			left: 0;
 			height: 56px;
 			width: 100%;
-			z-index: 100;
+			z-index: 1;
 			background-color: var(--white);
 			font-family: 'Galano Grotesque Medium';
 
@@ -63,75 +63,67 @@
 				align-items: center;
 				position: relative;
 				height: 100%;
-				width: 100%;
+				width: 90%;
+				max-width: 1200px;
 				list-style: none;
 			}
 
 			&__li {
 				position: relative;
-				width: 303px;
+				min-width: 170px;
+				max-width: 200px;
 				height: 100%;
 				transition: 0.7s;
-				background-color: var(--red);
+				list-style: none;
 			}
 
 			&__link {
 				position: absolute;
 				top: 0;
 				left: 0;
-				width: 100%;
-				height: 100%;
 				line-height: 56px;
+				width: 100%;
 				text-align: center;
 				font-size: 16px;
 				color: var(--darkblue);
-				z-index: 200;
 				background-color: var(--white);
 				&.active {
 					border-bottom: 3px solid var(--lightred);
 				}
 			}
-			&__hr {
-				display: none;
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-				height: 1px;
-				background-color: var(--red);
-				border: none;
-				width: 70%;
-				z-index: 250;
-				&.active {
-					display: block;
-				}
-			}
 		}
 	}
 	.etapas {
+		z-index: 1;
 		&__ul {
 			position: absolute;
-			top: -400%;
+			top: calc(-6 * 56px);
 			display: flex;
 			justify-content: start;
 			align-items: center;
 			flex-direction: column;
-			width: 303px;
-			height: calc(6 * 56px);
+			min-width: 170px;
+			max-width: 200px;
 			transition: 0.7s;
-			z-index: 100;
+			z-index: -1;
+			list-style: none;
 			&.active {
-				top: 400%;
-				z-index: 77777777777777777777777;
+				top: 56px;
 			}
 		}
 		&__li {
 			width: 100%;
+			background-color: rgba(255, 255, 255, 1);
+			height: 56px;
+			min-width: 170px;
+			max-width: 200px;
+			text-align: center;
+			line-height: 56px;
 		}
 
 		&__link {
 			width: 100%;
-			background-color: rgba(255, 255, 255, 1);
+			color: var(--darkblue);
 			&.active {
 				color: var(--red);
 			}
@@ -146,8 +138,7 @@
 		align-items: center;
 		top: 0;
 		left: 0;
-		height: 100vh;
-		max-height: 900px;
+		min-height: 100vh;
 		width: 100%;
 		background-color: rgba(255, 255, 255, 0.95);
 		transform: translateX(-120%);

@@ -10,7 +10,14 @@ const htmlElements = {
 	xClose: document.querySelector('.nav-icon__close'),
 	navMobile: document.querySelector('nav.nav-mobile'),
 	mobileNavLinks: [...document.querySelectorAll('.nav-mobile__link')],
-	navLinks: [...document.querySelectorAll('.nav-link')]
+	navLinks: [...document.querySelectorAll('.nav-link')],
+	linkEtapas: document.querySelector('.etapas'),
+	etapasSubmenu: document.querySelector('.etapas__ul'),
+	form: document.querySelector('#tu-opinion'),
+	formInput: document.querySelector('.opinion-form__input'),
+	formSubmitBtn: document.querySelector('.opinion-form__input'),
+	linksToTheCloud: document.querySelectorAll('.link-to-the-cloud'),
+	wordCloud: document.querySelector('#nube'),
 }
 
 export default htmlElements

@@ -15,32 +15,33 @@
 </head>
 
 <body>
-	<!-- NAVIGATION-->
 
+	<!-- NAVIGATION-->
 	<div class="nav-icons">
 		<i class="nav-icon nav-icon__hamburger fa fa-bars white" aria-hidden="true"></i>
 		<i class="nav-icon nav-icon__close fas fa-times lightblue"></i>
 	</div>
 
 	<nav class="nav nav-desktop">
+
 		<ul class="nav-desktop__ul">
 			<li class="nav-desktop__li">
 				<a class="nav-desktop__link nav-link" href="#inicio">Inicio</a>
-				<hr class="nav-desktop__hr" />
+
 			</li>
 			<li class="nav-desktop__li">
 				<a class="nav-desktop__link nav-link" href="#mapa">Mapa Yincana</a>
-				<hr class="nav-desktop__hr" />
+
 			</li>
 			<li class="nav-desktop__li">
-				<a class="nav-desktop__link nav-link" href="#nube">Nube de palabras</a>
-				<hr class="nav-desktop__hr" />
+				<a class="nav-desktop__link nav-link link-to-the-cloud" href="#nube">Nube de palabras</a>
+
 			</li>
 			<li class="nav-desktop__li">
 				<a href="#cuidados" class="nav-desktop__link etapas cuidados nav-link"
 						>Etapas</a>
-				<hr class="class='nav-desktop__hr' etapas__hr" />
-				<ul class="etapas__ul">
+
+				<ul class=" etapas__ul">
 					<li class="etapas__li">
 						<a class="etapas__link active nav-link" href="#cuidados">Cuidados</a>
 					</li>
@@ -63,19 +64,19 @@
 			</li>
 			<li class="nav-desktop__li">
 				<a class="nav-desktop__link nav-link" href="#nosotros">Quiénes somos</a>
-				<hr class="nav-desktop__hr" />
 			</li>
 			<li class="nav-desktop__li">
 				<a class="nav-desktop__link nav-link" href="#contacto">Contacto</a>
-				<hr class="nav-desktop__hr" />
+
 			</li>
 		</ul>
+
 	</nav>
 
 	<nav class="nav-mobile">
 		<a onclick="void(0)" class="nav-mobile__link" href="#mapa"
 				>Mapa Yincana</a>
-		<a onclick="void(0)" class="nav-mobile__link" href="#nube"
+		<a onclick="void(0)" class="nav-mobile__link link-to-the-cloud" href="#nube"
 				>Nube de palabras</a>
 		<a
 				onclick="void(0)"
@@ -223,34 +224,36 @@
 	<section class="section section-cloud bg-white" id="nube">
 		<div class="section__wrapper">
 			<h2 class="section-steps__header section-steps__header--longer-title lightblue">
-				<span class="nube-title-bigger">Nube</span><span class="nube-title-smaller">de palabras</span>
+				<span class="opinion-span opinion-span--one">Nube</span><span class="opinion-span opinion-span--two">de palabras</span>
 			</h2>
-			<blockquote class="section-cloud__quote lightred">“El caleidoscopio permite ver las cosas de forma distinta
-				y
-				construir nuevas
-				imágenes
-				relacionadas
-				con nuevas
-				realidades. No es solo un tema de puntos de vista sino de puntos de acciones. El
-				caleidoscopio es
-				una
-				herramienta que devuelve imágenes distintas, sin centros ni periferias. Haciendo rodear
-				el
-				caleidoscopio,
-				moviendo los vidrios coloridos que están en su interior, la imagen se transforma y
-				aparecen nuevas
-				constelaciones coloridas. El caleidoscopio nos permite ver la “pluriversidad” del
-				sistema mundo.
-				Aceptar la
-				propuesta decolonial no pasa solo por ponerse las lentes con las que miramos la
-				realidad, sino
-				cambiar las
-				herramientas con la que la miramos, interpretamos y nos proyectamos en ella” (Rachele
-				Borghi, 2020.
-				Decolonialitá e privilegio)
-			</blockquote>
-			<div class="word-cloud-wrapper">
-				<h2 class="lightred">Aqui va a haber wordclud</h2>
+			<div id="cloud-wrapper" class="section-cloud__quote-and-cloud-wrapper">
+				<div id='cloud' class="section-cloud__word-cloud-wrapper"></div>
+					<blockquote class="section-cloud__quote lightred">“El caleidoscopio permite ver las cosas de forma
+						distinta
+						y
+						construir nuevas
+						imágenes
+						relacionadas
+						con nuevas
+						realidades. No es solo un tema de puntos de vista sino de puntos de acciones. El
+						caleidoscopio es
+						una
+						herramienta que devuelve imágenes distintas, sin centros ni periferias. Haciendo rodear
+						el
+						caleidoscopio,
+						moviendo los vidrios coloridos que están en su interior, la imagen se transforma y
+						aparecen nuevas
+						constelaciones coloridas. El caleidoscopio nos permite ver la “pluriversidad” del
+						sistema mundo.
+						Aceptar la
+						propuesta decolonial no pasa solo por ponerse las lentes con las que miramos la
+						realidad, sino
+						cambiar las
+						herramientas con la que la miramos, interpretamos y nos proyectamos en ella” (Rachele
+						Borghi, 2020.
+						<i>Decolonialitá e privilegio</i>)
+					</blockquote>
+				
 			</div>
 		</div>
 	</section>
@@ -1680,8 +1683,7 @@
 				causas de las desigualdades.</p>
 			<form id="tu-opinion" class="opinion-form">
 				<label class="opinion-form__label" for="tu-opinion">escribe tu palabra</label>
-				<input class="opinion-form__input" type="text" name="opinion" placeholder="escibe tu palabra..."
-					required>
+				<input class="opinion-form__input" type="text" name="text" placeholder="escibe tu palabra..." required>
 				<button class="btn opinion-form__btn" type="submit">enviar ///</button>
 			</form>
 		</div>
@@ -1765,11 +1767,11 @@
 		<div class="section__wrapper footer__wrapper">
 
 			<div class="footer__column footer__column--1">
-				<h3 class="lightred">Construyendo <br>
+				<h4 class="footer__header lightred">Construyendo <br>
 					nuevas narrativas <br>
 					descoloniales
-				</h3>
-				<p class="laboratorio">
+				</h4>
+				<p class="footer__laboratorio">
 					Laboratorio de participación ciudadana <br>
 					Medialab-Prado
 				</p>
