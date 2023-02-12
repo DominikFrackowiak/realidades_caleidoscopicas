@@ -25,7 +25,11 @@ const submitForm = () => {
 				}
 			})
 
-		wordCloud.scrollIntoView({ behavior: 'smooth', block: 'start' })
+		window.scroll({
+			top: wordCloud.offsetTop,
+			left: 0,
+			behavior: 'smooth',
+		})
 		e.target.elements.text.value = ''
 	})
 }
